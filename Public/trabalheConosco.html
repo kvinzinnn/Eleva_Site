@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Trabalhe Conosco | Eleva Merchandising</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Trabalhe Conosco | Eleva Merchandising</title>
-    <link rel="stylesheet" href="Style/trabalheConosco.css">
-    <link rel="icon" type="image/png" href="Media/Logo Eleva.png">
+  <link rel="stylesheet" href="/Public/Style/trabalhe.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header id="cabeça">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="">Serviços</a></li>
-            </ul>
-        </nav>
-    </header>
+<header id="cabeça">
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section id="trabalhe-conosco">
-        <div class="trabalhe-container">
+<main>
 
-            <div class="trabalhe-conteudo">
-                <h2>Trabalhe Conosco</h2>
-                <p>
-                    Faça parte da Eleva Merchandising. Selecione a vaga desejada
-                    e envie seu currículo para nossa equipe.
-                </p>
+  <!-- HERO -->
+  <section class="hero reveal">
+    <h1>Trabalhe Conosco</h1>
+    <p>
+      Faça parte da Eleva Merchandising e cresça junto com uma empresa
+      focada em performance, estratégia e execução de alto nível.
+    </p>
+  </section>
 
-                <form class="trabalhe-form">
-                    <label for="vaga">Selecione a vaga</label>
+  <!-- VANTAGENS -->
+  <section class="vantagens reveal">
+    <div class="vantagens-grid">
 
-                    <select id="vaga" name="vaga" required>
-                        <option value=""> Selecione </option>
-                        <option value="Analista de Trade Marketing">
-                            Analista de Trade Marketing
-                        </option>
-                        <option value="Promotor de Vendas">
-                            Promotor de Vendas
-                        </option>
-                        <option value="Coordenador de Merchandising">
-                            Coordenador de Merchandising
-                        </option>
-                        <option value="Supervisor de Campo">
-                            Supervisor de Campo
-                        </option>
-                    </select>
+      <div class="vantagem">
+        <h3>Crescimento Profissional</h3>
+        <p>Oportunidades reais de desenvolvimento e evolução dentro da empresa.</p>
+      </div>
 
-                    <a href="rh@elevamerchandising.com.br" class="btn-enviar">
-                        Enviar Currículo
-                    </a>
-                </form>
-            </div>
+      <div class="vantagem">
+        <h3>Ambiente Colaborativo</h3>
+        <p>Trabalho em equipe, comunicação clara e foco em resultado.</p>
+      </div>
 
-            <div class="trabalhe-imagem">
-                <img src="/Public/Media/logo completa ELEVA black.png" alt="Logo Black">
-            </div>
+      <div class="vantagem">
+        <h3>Projetos Reais</h3>
+        <p>Atuação direta no ponto de venda com grandes marcas.</p>
+      </div>
 
-        </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- FORMULÁRIO -->
+  <section class="formulario reveal">
+    <h2>Envie seu Currículo</h2>
 
-    <script src="/Public/js/trabalheConosco.js"></script>
+    <form>
+      <input type="text" placeholder="Nome completo" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="tel" placeholder="Telefone" required>
 
+      <select required>
+        <option value="">Área de interesse</option>
+        <option>Trade Marketing</option>
+        <option>Promotor de Vendas</option>
+        <option>Coordenação</option>
+        <option>Administrativo</option>
+      </select>
+
+      <textarea placeholder="Fale um pouco sobre você"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer" id="footer">
+  <div class="footer-bottom">
+    Eleva Merchandising © Todos os direitos reservados
+  </div>
+</footer>
+
+<script src="/Public/Js/trabalhe.js"></script>
 </body>
 </html>

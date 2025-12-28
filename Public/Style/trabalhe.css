@@ -1,0 +1,164 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --bg: #f8fafc;
+  --text: #0f2a5e;
+  --muted: #334e89;
+  --accent: #1e90ff;
+  --panel: #ffffff;
+  --shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ===== HEADER / MENU (IGUAL AO INDEX) ===== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  z-index: 200;
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  padding: 12px 48px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: .98rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 8px 2px;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+/* ===== TRABALHE CONOSCO ===== */
+#trabalhe-conosco {
+  padding: 160px 5% 90px;
+  background-color: #f8f9fb;
+}
+
+.trabalhe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.trabalhe-conteudo {
+  max-width: 500px;
+}
+
+.trabalhe-conteudo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.trabalhe-conteudo p {
+  color: var(--muted);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.trabalhe-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.trabalhe-form select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  outline: none;
+}
+
+.trabalhe-form select:focus {
+  border-color: var(--text);
+}
+
+.btn-enviar {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: var(--text);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.trabalhe-imagem img {
+  max-width: 380px;
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  background: #0f2a5e;
+  color: #fff;
+  text-align: center;
+  padding: 24px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .trabalhe-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trabalhe-imagem img {
+    max-width: 280px;
+  }
+}
