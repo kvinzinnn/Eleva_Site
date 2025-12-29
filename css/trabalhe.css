@@ -1,0 +1,129 @@
+/* Specific Styles for Trabalhe Conosco Page */
+/* Inherits from global.css */
+
+/* VAGAS */
+.vagas-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 24px 60px; /* Added top padding */
+}
+
+.vagas-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.vagas-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.vagas-header p {
+  color: var(--muted);
+}
+
+.vagas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.vaga-card {
+  background: var(--panel);
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.vaga-card h3 {
+  font-size: 1.1rem;
+}
+
+.vaga-card span {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.vaga-card button {
+  margin-top: auto;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--text);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.vaga-card button:hover {
+  opacity: .9;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: var(--text);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 12px;
+}
+
+.modal-content h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+}
+
+.modal-content ul li {
+  margin-bottom: 6px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.form-curriculo {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-curriculo button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
