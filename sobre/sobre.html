@@ -2,67 +2,73 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Trabalhe Conosco | Eleva Merchandising</title>
+  <link rel="icon" type="image/png" href="../img/Logo Eleva.png">
+  <title>Sobre | Eleva Merchandising</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="icon" type="image/png" href="../img/Logo Eleva.png">
   <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/trabalhe.css">
+  <link rel="stylesheet" href="../css/sobre.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header id="cabeça">
         <nav>
             <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="/sobre/">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="/trabalheConosco/" class="active">Trabalhe Conosco</a></li>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/sobre/sobre.html" class="active">Sobre</a></li>
+                <li><a href="/servico/servico.html">Serviços</a></li>
+                <li><a href="/trabalheConosco/trabalhe.html">Trabalhe Conosco</a></li>
             </ul>
         </nav>
     </header>
 
-  <main class="vagas-page">
+<main>
 
-    <section class="vagas-header">
-      <h1>Vagas em Aberto</h1>
-      <p>Faça parte da nossa equipe e cresça com a Eleva Merchandising.</p>
-    </section>
 
-    <section class="vagas-grid" id="vagasGrid">
-      
-    </section>
+  <section class="sobre reveal">
+    <div class="sobre-container">
+      <h1>Sobre a Eleva Merchandising</h1>
+      <p>
+        A Eleva Merchandising nasceu com o propósito de transformar
+        estratégias em resultados reais no ponto de venda. Atuamos com
+        inteligência de mercado, execução eficiente e foco total em performance.
+      </p>
 
-  </main>
-
-  <div class="modal" id="vagaModal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-
-      <h2 id="modalTitulo"></h2>
-      <p id="modalDescricao"></p>
-
-      <h4>Requisitos</h4>
-      <ul id="modalRequisitos"></ul>
-
-      <h4>Benefícios</h4>
-      <ul id="modalBeneficios"></ul>
-
-      <p><strong>Local:</strong> <span id="modalLocal"></span></p>
-      <p><strong>Horário:</strong> <span id="modalHorario"></span></p>
-
-      <form class="form-curriculo">
-        <label>Anexar currículo:</label>
-        <input type="file" required>
-
-        <button type="submit">Candidatar-se</button>
-      </form>
+      <p>
+        Nossa operação é estruturada para atender marcas que buscam crescimento,
+        visibilidade e presença estratégica, sempre alinhando dados,
+        criatividade e execução de alto nível.
+      </p>
     </div>
-  </div>
+  </section>
+
+  
+  
+  
+  <section class="instalacoes reveal">
+    <h2>Nossas Instalações</h2>
+
+    <div class="instalacoes-grid">
+      <div class="predio">
+        <img src="../img/predio1.jpg" alt="Unidade Passo Fundo">
+        <span>Passo Fundo - RS</span>
+      </div>
+
+      <div class="predio">
+        <img src="../img/predio2.jpg" alt="Unidade Porto Alegre">
+        <span>Porto Alegre - RS</span>
+      </div>
+
+      <div class="predio">
+        <img src="../img/predio3.jpg" alt="Unidade Caxias do Sul">
+        <span>Caxias do Sul - RS</span>
+      </div>
+    </div>
+  </section>
+
+</main>
 
     <footer class="footer">
         <div class="footer-container">
@@ -111,6 +117,6 @@
     </footer>
 
 <script src="../js/global.js"></script>
-<script src="../js/trabalhe.js"></script>
+<script src="../js/sobre.js"></script>
 </body>
 </html>
